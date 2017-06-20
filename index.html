@@ -13,172 +13,156 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="#"><img src="img/logo.Pwz" alt="Toa Taka"></a>
+    <div class="container-fluid navbar-default" id="nav">
+      <div class="navbar-header">
+        <div class="text-center">
+        <a href="#"><img src="img/logo.Pwz" alt="Toa Taka" height="60"></a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html" data-toggle="modal" data-target="#myModal">Sign Up/Sign In</a></li>
-          <li><a href="gallery.html">Gallery<span class="sr-only">(current)</span></a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
       </div>
-    </nav>
+      <ul class="nav navbar-nav navbar-right" id="navDetails">
+        <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
+        <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="links">Donate</a></li>
+      </ul>
+    </div>
+
     <!-- Modal -->
-    <div id="myModal" class="modal fade">
+    <div id="myModal" class="container-fluid modal fade">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
-            <div class="row">
-            <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-md-4">
               <form class="form-horizontal">
-                <h2>Sign Up</h2>
+                <h2 class="text-center modalHeaders">Sign Up</h2>
                 <fieldset>
                   <div class="form-group">
-                    <label for="name" class="col-lg-2 control-label">Full Name</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="inputName" placeholder="Name">
-                    </div>
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
                   </div>
                   <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-                    <div class="col-lg-10">
-                      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <div class="col-lg-10 col-lg-offset-2">
-                        <button type="submit" class="btn btn-primary">Sign Up</button>
-                        <button type="reset" class="btn btn-default">Cancel</button>
-                      </div>
-                    </div>
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
                   </div>
+                  <button type="submit" class="btn modalBtn">Sign Up</button>
                 </fieldset>
               </form>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-sm-2"></div>
+
+            <div class="col-md-4">
               <form class="form-horizontal">
-                <h2>Sign In</h2>
+                <h2 class="text-center modalHeaders">Sign In</h2>
                 <fieldset>
                   <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-                    <div class="col-lg-10">
-                      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <div class="col-lg-10 col-lg-offset-2">
-                        <button type="submit" class="btn btn-primary">Sign In</button>
-                        <button type="reset" class="btn btn-default">Cancel</button>
-                      </div>
-                    </div>
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
                   </div>
+                  <button type="submit" class="btn modalBtn">Sign In</button>
                 </fieldset>
               </form>
             </div>
+            <div class="col-sm-1"></div>
           </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <!-- Header -->
 
 
-  <div class="container">
-    <div class="page-header">
-      <h1>Toa Taka <small>Clean Country</small></h1>
+  <div class="page-header">
+    <h1 class="text-center">TOA TAKA</h1>
+    <h4 class="text-center">CLEAN COUNTY</h4>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+        <img src="images/nairobi.jpg" class="img-responsive" style="width: 100%; height: 80%;">
     </div>
-    <!--carousel goes here-->
-    <div class="carousel slide" id="main-carousel" data-ride="carousel">
-      <!--carousel indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#main-carousel" data-slide-to="1"></li>
-        <li data-target="#main-carousel" data-slide-to="2"></li>
-        <li data-target="#main-carousel" data-slide-to="3"></li>
-      </ol>
-      <!--elements in the carousel-->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/index-carousel/child-cleanup.jpg" alt="Children Cleaning-up" class="img-responsive" style="width:100%">
-        </div>
-        <div class="item">
-          <img src="img/index-carousel/cleaning.jpg" alt="Neighbourhood Clean-up" class="img-responsive" style="width:100%">
-        </div>
-        <div class="item">
-          <img src="img/index-carousel/toa-taka.jpg" alt="Working to clean" class="img-responsive" style="width:100%">
-        </div>
-        <div class="item">
-          <img src="img/index-carousel/garbage-truck.jpg" alt="project-4" class="img-responsive" style="width:100%">
-        </div>
-      </div>
-
-      <!--left and right controls of the carousel-->
-      <a class="left carousel-control" href="#main-carousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#main-carousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-
-      <!--end of carousel-->
-    </div> <hr>
+  </div>
+  <br><br><br>
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8">
-          <h2>Some of our Projects</h2>
+          <h3 class="text-center">SOME OF OUR PROJECTS</h3>
           <div class="row">
 
             <div class="col-md-4">
-              <div class="thumbnail">
+              <div class="thumbnail" style="max-width: 100%; height: 100%;">
                 <img src="img/index-carousel/clean-water.jpg" alt="Clean-water" class="img-responsive">
                 <div class="caption">
-                  <h4>Cleansing Project <h6><span class="label label-primary">complete</span></h6></h4>
+                  <h3 class="text-center">Cleansing Project</h3>
+                  <h4 class="text-center"><span class="label label-success">Complete</span></h4>
                   <p>A project to clean the environment around water points.</p>
-                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn  btn-xs btn-default" role="button">Donate</a>
+                  <p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a> 
+                      </div>
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                      </div>
+                    </div>
                   </p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
-              <div class="thumbnail">
+              <div class="thumbnail" style="max-width: 100%; height: 100%;">
                 <img src="img/index-carousel/child-cleanup.jpg" alt="child-cleanup" class="img-responsive">
                 <div class="caption">
-                  <h4>Next Generation <h6><span class="label label-warning">In-progress</span></h6></h4>
+                  <h3 class="text-center">Next Generation</h3>
+                  <h4 class="text-center"><span class="label label-warning">In-progress</span></h4>
                   <p>It's about time we involved the next generation. The future is green.</p>
-                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
+                  <p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a> 
+                      </div>
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                      </div>
+                    </div>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" style="max-width: 100%; height: 100%;">
               <div class="thumbnail">
                 <img src="img/index-carousel/president.jpg" alt="president-Kenyatta" class="img-responsive">
                 <div class="caption">
-                  <h4>Bring in the Leaders <h6><span class="label label-warning">In-progress</span></h6></h4>
+                  <h3 class="text-center">Bring in the Leaders</h3>
+                  <h4 class="text-center"><span class="label label-success">Complete</span></h4>
                   <p>Best way to lead is to show and example. The President did just that.</p>
-                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
+                  <p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a> 
+                      </div>
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                      </div>
+                    </div>
                   </p>
                 </div>
               </div>
@@ -189,24 +173,42 @@
           <div class="row">
 
             <div class="col-md-4">
-              <div class="thumbnail">
-                <img src="img/index-carousel/view-of-nairobi.jpg" alt="view-of-Nairobi" class="img-responsive">
+              <div class="thumbnail" style="width: 100%; height: 100%;">
+                <img src="img/index-carousel/nairobi.jpg" alt="view-of-Nairobi" class="img-responsive">
                 <div class="caption">
-                  <h3>Park Clean-Up <h6><span class="label label-success">In-progress</span></h6></h3>
+                  <h3 class="text-center">Park Clean-Up</h3>
+                  <h4 class="text-center"><span class="label label-warning">In-progress</span></h4>
                   <p>We know how important recration is, clean-up the parks!.</p>
-                  <p><a href="#" class="btn btn-xs btn-primary" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
+                  <p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a> 
+                      </div>
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                      </div>
+                    </div>
                   </p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
-              <div class="thumbnail">
+              <div class="thumbnail" style="width: 100%; height: 100%;">
                 <img src="img/index-carousel/garbage-truck.jpg" alt="Garbage-truck" class="img-responsive">
                 <div class="caption">
-                  <h3>Garbage Disposal <h6><span class="label label-warning">In-progress</span></h6></h3>
+                  <h3 class="text-center">Garbage Disposal</h3>
+                  <h4 class="text-center"><span class="label label-success">Complete</span></h4>
                   <p>Finding new ways to "toa-taka"(take out the trash).</p>
-                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
+                  <p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a> 
+                      </div>
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                      </div>
+                    </div>
                   </p>
                 </div>
               </div>
@@ -214,12 +216,21 @@
 
 
             <div class="col-md-4">
-              <div class="thumbnail">
+              <div class="thumbnail" style="width: 100%; height: 100%;">
                 <img src="img/index-carousel/dandora.jpg" alt="dandora-dump-site" class="img-responsive">
                 <div class="caption">
-                  <h3>No Dumping <h6><span class="label label-danger">In-progress</span></h6></h3>
+                  <h3 class="text-center">No Dumping</h3>
+                  <h4 class="text-center"><span class="label label-warning">In-progress</span></h4>
                   <p>Join us in our efforts to get rid of some of the illegal dump sites in the city.</p>
-                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
+                  <p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-primary btn-xs" role="button" style="width: 100%;">View</a> 
+                      </div>
+                      <div class="col-sm-6">
+                        <a href="#" class="btn btn-xs btn-default" role="button" style="width: 100%;">Donate</a>
+                      </div>
+                    </div>
                   </p>
                 </div>
               </div>
@@ -233,27 +244,35 @@
         <div class="col-md-4">
           <div class="panel panel-warning">
             <div class="panel-heading">
-              <h3 class="panel-title">Become a Donor</h3>
+              <h3 class="panel-title text-center"><strong>BECOME A DONOR</strong></h3>
             </div>
             <div class="panel-body">
-              <p class="text-warning"><em>Join our donors:</em></p>
+              <p class="text-warning text-center"><em>Join our donors:</em></p>
               <ul class="list-group">
-                <li class="list-group-item">Professor Xavier - $1000</li>
-                <li class="list-group-item">Moringa School - $1000</li>
-                <li class="list-group-item">Safaricom Ltd - $2000</li>
-                <li class="list-group-item"  >John Doe - $100</li>
+                <li class="list-group-item">Kanye West has donated Khs. 10,000 - 5 minutes ago</li>
+                <li class="list-group-item">Moringa School has donated Khs. 24,000 - 10 minutes ago</li>
+                <li class="list-group-item">Safaricom Kenya Ltd has donated Khs. 100,000 - 14 minutes ago</li>
+                <li class="list-group-item">Uhuru Kenyatta has donated Khs. 50,000 - 18 minutes ago</li>
+                <li class="list-group-item">Raila Odinga has donated Khs. 50,000 - 18 minutes ago</li>
+                <li class="list-group-item">Gucci Mane has donated Khs. 50,000 - 20 minutes ago</li>
               </ul>
             </div>
           </div>
-      <div class="panel panel-success">
-        <div class="panel-heading">
-            <h3 class="panel-title">Toa Taka in the News:</h3>
-        </div>
-        <div class="panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-primary">read article</a>
-        </div>
-      </div>
+
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Toa Taka in the News:</h3>
+            </div>
+            <div class="panel-body">
+              <h3>Toa Taka Launches School Program</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="btn btn-primary">read article</a>
+              <h3>Toa Taka Cleans Uhuru Park</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="btn btn-primary">read article</a>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -262,7 +281,7 @@
     <!--end of container-->
     </div>
 
-     <!-- footer -->
+    <!-- footer -->
     <div class="container-fluid navbar-bottom" id="footer">
       <div class="row">
         <div class="col-sm-4">
@@ -305,47 +324,6 @@
       </div>
     </div>
     <!-- footer -->
-     <div class="container-fluid" id="footer">
-       <div class="row">
-         <div class="col-sm-4">
-           <h1 class="text-center" id="footerHeader">Toa Taka</h1>
-           <br>
-           <div class="text-center">
-             <img src="images/logo.png">
-           </div>
-         </div>
-         <div class="col-sm-8">
-           <div class="row moreInfo">
-             <div class="col-sm-4"></div>
-             <div class="col-sm-4">
-               <ul class="extra">
-                 <li><a href="index.html" class="links">Home</a></li>
-                 <li><a href="about-us.html" class="links">About Us</a></li>
-                 <li><a href="team.html" class="links">Our Team</a></li>
-                 <li><a href="gallery.html" class="links">Gallery</a></li>
-                 <li><a href="#" class="links">Contact Us</a></li>
-                 <li><a href="donate.html" class="links">Donate</a></li>
-               </ul>
-             </div>
-             <div class="col-sm-4">
-               <ul class="extra">
-                 <li><a href="#" class="links">Our Apps</a></li>
-                 <li><a href="#" class="links">Careers</a></li>
-                 <li><a href="#" class="links">FAQ</a></li>
-                 <li><a href="#" class="links">Terms and Conditions</a></li>
-                 <li><a href="#" class="links">Our Partners</a></li>
-                 <li><a href="#" class="links">Privacy</a></li>
-               </ul>
-             </div>
-           </div>
-         </div>
-       </div>
-       <div class="row">
-         <br>
-         <br>
-         <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
-       </div>
-     </div>
 
 
     <script src="js/jquery-3.2.1.js"></script>
