@@ -7,90 +7,103 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Toa-Taka</title>
 
 </head>
 
 <body>
-  <!-- Header -->
   <header>
-    <div class="container-fluid navbar-default" id="nav">
-      <div class="navbar-header">
-        <div class="text-center">
-        <a href="#"><img src="img/logo.Pwz" alt="Toa Taka" height="60"></a>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#"><img src="img/logo.Pwz" alt="Toa Taka"></a>
         </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html" data-toggle="modal" data-target="#myModal">Sign Up/Sign In</a></li>
+          <li><a href="gallery.html">Gallery<span class="sr-only">(current)</span></a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
       </div>
-      <ul class="nav navbar-nav navbar-right" id="navDetails">
-        <li><a href="#" data-toggle="modal" data-target="#myModal" class="links">Sign In</a></li>
-        <li><a href="gallery.html" class="links">Gallery<span class="sr-only">(current)</span></a></li>
-        <li><a href="#" class="links">Donate</a></li>
-      </ul>
-    </div>
-
+    </nav>
     <!-- Modal -->
-    <div id="myModal" class="container-fluid modal fade">
+    <div id="myModal" class="modal fade">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
-          <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-md-4">
+            <div class="row">
+            <div class="col-md-6">
               <form class="form-horizontal">
-                <h2 class="text-center modalHeaders">Sign Up</h2>
+                <h2>Sign Up</h2>
                 <fieldset>
                   <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control inputs" id="inputName" placeholder="Name">
+                    <label for="name" class="col-lg-2 control-label">Full Name</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputEmail">Email</label>
-                    <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                      </div>
+                    </div>
                   </div>
-                  <button type="submit" class="btn modalBtn">Sign Up</button>
                 </fieldset>
               </form>
             </div>
 
-            <div class="col-sm-2"></div>
-
-            <div class="col-md-4">
+            <div class="col-md-6">
               <form class="form-horizontal">
-                <h2 class="text-center modalHeaders">Sign In</h2>
+                <h2>Sign In</h2>
                 <fieldset>
                   <div class="form-group">
-                    <label for="inputEmail">Email</label>
-                    <input type="text" class="form-control inputs" id="inputEmail" placeholder="Email">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control inputs" id="inputPassword" placeholder="Password">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                      </div>
+                    </div>
                   </div>
-                  <button type="submit" class="btn modalBtn">Sign In</button>
                 </fieldset>
               </form>
             </div>
-            <div class="col-sm-1"></div>
           </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- Header -->
-  
-  <div class="page-header">
-    <h1>Toa Taka <small>Clean Country</small></h1>
-  </div>
-  <div class="container">
 
+
+  <div class="container">
+    <div class="page-header">
+      <h1>Toa Taka <small>Clean Country</small></h1>
+    </div>
     <!--carousel goes here-->
     <div class="carousel slide" id="main-carousel" data-ride="carousel">
       <!--carousel indicators-->
@@ -127,7 +140,7 @@
       </a>
 
       <!--end of carousel-->
-    </div>
+    </div> <hr>
 
     <div class="container-fluid">
       <div class="row">
@@ -139,9 +152,9 @@
               <div class="thumbnail">
                 <img src="img/index-carousel/clean-water.jpg" alt="Clean-water" class="img-responsive">
                 <div class="caption">
-                  <h3>Cleansing Project</h3>
+                  <h4>Cleansing Project <h6><span class="label label-primary">complete</span></h6></h4>
                   <p>A project to clean the environment around water points.</p>
-                  <p><a href="#" class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Donate</a>
+                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn  btn-xs btn-default" role="button">Donate</a>
                   </p>
                 </div>
               </div>
@@ -151,9 +164,9 @@
               <div class="thumbnail">
                 <img src="img/index-carousel/child-cleanup.jpg" alt="child-cleanup" class="img-responsive">
                 <div class="caption">
-                  <h3>Next Generation</h3>
+                  <h4>Next Generation <h6><span class="label label-warning">In-progress</span></h6></h4>
                   <p>It's about time we involved the next generation. The future is green.</p>
-                  <p><a href="#" class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Donate</a>
+                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
                   </p>
                 </div>
               </div>
@@ -163,9 +176,9 @@
               <div class="thumbnail">
                 <img src="img/index-carousel/president.jpg" alt="president-Kenyatta" class="img-responsive">
                 <div class="caption">
-                  <h3>Bring in the Leaders</h3>
+                  <h4>Bring in the Leaders <h6><span class="label label-warning">In-progress</span></h6></h4>
                   <p>Best way to lead is to show and example. The President did just that.</p>
-                  <p><a href="#" class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Donate</a>
+                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
                   </p>
                 </div>
               </div>
@@ -179,9 +192,9 @@
               <div class="thumbnail">
                 <img src="img/index-carousel/view-of-nairobi.jpg" alt="view-of-Nairobi" class="img-responsive">
                 <div class="caption">
-                  <h3>Park Clean-Up</h3>
+                  <h3>Park Clean-Up <h6><span class="label label-success">In-progress</span></h6></h3>
                   <p>We know how important recration is, clean-up the parks!.</p>
-                  <p><a href="#" class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Donate</a>
+                  <p><a href="#" class="btn btn-xs btn-primary" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
                   </p>
                 </div>
               </div>
@@ -191,9 +204,9 @@
               <div class="thumbnail">
                 <img src="img/index-carousel/garbage-truck.jpg" alt="Garbage-truck" class="img-responsive">
                 <div class="caption">
-                  <h3>Garbage Disposal</h3>
+                  <h3>Garbage Disposal <h6><span class="label label-warning">In-progress</span></h6></h3>
                   <p>Finding new ways to "toa-taka"(take out the trash).</p>
-                  <p><a href="#" class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Donate</a>
+                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
                   </p>
                 </div>
               </div>
@@ -204,9 +217,9 @@
               <div class="thumbnail">
                 <img src="img/index-carousel/dandora.jpg" alt="dandora-dump-site" class="img-responsive">
                 <div class="caption">
-                  <h3>No Dumping</h3>
+                  <h3>No Dumping <h6><span class="label label-danger">In-progress</span></h6></h3>
                   <p>Join us in our efforts to get rid of some of the illegal dump sites in the city.</p>
-                  <p><a href="#" class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Donate</a>
+                  <p><a href="#" class="btn btn-primary btn-xs" role="button">View</a> <a href="#" class="btn btn-xs btn-default" role="button">Donate</a>
                   </p>
                 </div>
               </div>
@@ -218,26 +231,34 @@
         <!--end of projects col-md-8-->
 
         <div class="col-md-4">
-          <div class="panel panel-default">
+          <div class="panel panel-warning">
             <div class="panel-heading">
-              <h3>Become a Donor</h3>
+              <h3 class="panel-title">Become a Donor</h3>
             </div>
             <div class="panel-body">
               <p class="text-warning"><em>Join our donors:</em></p>
-              <ul>
-                <li>Professor Xavier - $1000</li>
-                <li>Moringa School - $1000</li>
-                <li>Safaricom Ltd - $2000</li>
-                <li>John Doe - $100</li>
+              <ul class="list-group">
+                <li class="list-group-item">Professor Xavier - $1000</li>
+                <li class="list-group-item">Moringa School - $1000</li>
+                <li class="list-group-item">Safaricom Ltd - $2000</li>
+                <li class="list-group-item"  >John Doe - $100</li>
               </ul>
             </div>
           </div>
-
+      <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">Toa Taka in the News:</h3>
+        </div>
+        <div class="panel-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="btn btn-primary">read article</a>
+        </div>
+      </div>
         </div>
 
       </div>
       <!--end of main row-->
-    </div>
+    </div>  </div>
     <!--end of container-->
     </div>
 
@@ -284,6 +305,47 @@
       </div>
     </div>
     <!-- footer -->
+     <div class="container-fluid" id="footer">
+       <div class="row">
+         <div class="col-sm-4">
+           <h1 class="text-center" id="footerHeader">Toa Taka</h1>
+           <br>
+           <div class="text-center">
+             <img src="images/logo.png">
+           </div>
+         </div>
+         <div class="col-sm-8">
+           <div class="row moreInfo">
+             <div class="col-sm-4"></div>
+             <div class="col-sm-4">
+               <ul class="extra">
+                 <li><a href="index.html" class="links">Home</a></li>
+                 <li><a href="about-us.html" class="links">About Us</a></li>
+                 <li><a href="team.html" class="links">Our Team</a></li>
+                 <li><a href="gallery.html" class="links">Gallery</a></li>
+                 <li><a href="#" class="links">Contact Us</a></li>
+                 <li><a href="donate.html" class="links">Donate</a></li>
+               </ul>
+             </div>
+             <div class="col-sm-4">
+               <ul class="extra">
+                 <li><a href="#" class="links">Our Apps</a></li>
+                 <li><a href="#" class="links">Careers</a></li>
+                 <li><a href="#" class="links">FAQ</a></li>
+                 <li><a href="#" class="links">Terms and Conditions</a></li>
+                 <li><a href="#" class="links">Our Partners</a></li>
+                 <li><a href="#" class="links">Privacy</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="row">
+         <br>
+         <br>
+         <p class="text-center" id="copy">&#169 2017 Toa Taka. All Rights Reserved.</p>
+       </div>
+     </div>
 
 
     <script src="js/jquery-3.2.1.js"></script>
