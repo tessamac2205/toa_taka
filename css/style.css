@@ -1,3 +1,4 @@
+
 /* General */
 
 .img-circle {
@@ -106,3 +107,7 @@ button {
 
 
 /* Footer */
+
+body{
+    background: #F1F1F1;
+}
