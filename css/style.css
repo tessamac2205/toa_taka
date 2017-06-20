@@ -83,7 +83,9 @@ button {
   width: 100%;
 }
 
-
+#galleryContainer {
+  padding-top: 50px;
+}
 /* Image Gallery */
 
 
